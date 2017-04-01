@@ -18,23 +18,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // 相同的qos是否有相同的target
     
     dispatch_queue_t mainGlobalQueue = dispatch_get_main_queue();
-    dispatch_queue_t defaultGlobalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_queue_t highGlobalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
+    dispatch_queue_t defaultGlobalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_queue_t lowGlobalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0);
     dispatch_queue_t backgroundGlobalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
     dispatch_queue_t customCocurrentQueue = dispatch_queue_create("me.hite.demo.thread.c1", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t customCocurrentQueue2 = dispatch_queue_create("me.hite.demo.thread.c2", DISPATCH_QUEUE_CONCURRENT);
     dispatch_queue_t customSerialQueue = dispatch_queue_create("me.hite.demo.thread.s1", DISPATCH_QUEUE_SERIAL);
-    
+    dispatch_queue_t customSerialQueue2 = dispatch_queue_create("me.hite.demo.thread.s2", DISPATCH_QUEUE_SERIAL);
     
     [self logBegin:(@"QOS")];
-    NSArray *queues = @[mainGlobalQueue, highGlobalQueue, defaultGlobalQueue, lowGlobalQueue, backgroundGlobalQueue, customCocurrentQueue, customSerialQueue];
+    NSArray *queues = @[mainGlobalQueue, highGlobalQueue, defaultGlobalQueue, lowGlobalQueue, backgroundGlobalQueue, customCocurrentQueue, customCocurrentQueue2, customSerialQueue, customSerialQueue2];
 
     for (NSUInteger i = 0; i< queues.count; i++) {
         dispatch_queue_t t = queues[i];
         NSLog(@"%u - dispatch queue label = %s", i, dispatch_queue_get_label(t));
     }
+    // debug 住看详情
     [self logEnd:(@"QOS")];
     
 //    [self logBegin:@"NSOBject performSelector"];

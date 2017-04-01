@@ -13,6 +13,7 @@
 #import "Demo_A2_SyncViewController.h"
 #import "Demo_A3_QueueTypeViewController.h"
 #import "Demo_A4_TargetViewController.h"
+#import "Demo_A5_SourceViewController.h"
 
 @implementation DemoMapper
 
@@ -77,6 +78,12 @@
     a4.demoName = @"Target测试";
     a4.clzName = Demo_A4_TargetViewController.class;
     [self.objects addObject:a4];
+    
+    // source 测试
+    DemoMapper *a5 = [DemoMapper new];
+    a5.demoName = @"dispatch source 测试";
+    a5.clzName = Demo_A5_SourceViewController.class;
+    [self.objects addObject:a5];
 }
 
 - (void)insertNewObject:(id)sender {

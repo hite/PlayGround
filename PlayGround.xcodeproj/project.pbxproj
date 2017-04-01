@@ -12,6 +12,7 @@
 		48708B011E8E27590032F822 /* UIViewController+LogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 48708B001E8E27590032F822 /* UIViewController+LogUtil.m */; };
 		48708B041E8E2EE20032F822 /* Demo_A3_QueueTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48708B031E8E2EE20032F822 /* Demo_A3_QueueTypeViewController.m */; };
 		48708B071E8E4C370032F822 /* Demo_A4_TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48708B061E8E4C370032F822 /* Demo_A4_TargetViewController.m */; };
+		48708B0A1E8E8D130032F822 /* Demo_A5_SourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48708B091E8E8D130032F822 /* Demo_A5_SourceViewController.m */; };
 		487A45451E8A4E6800137DFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 487A45441E8A4E6800137DFF /* main.m */; };
 		487A45481E8A4E6800137DFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 487A45471E8A4E6800137DFF /* AppDelegate.m */; };
 		487A454B1E8A4E6800137DFF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 487A454A1E8A4E6800137DFF /* MasterViewController.m */; };
@@ -33,6 +34,8 @@
 		48708B031E8E2EE20032F822 /* Demo_A3_QueueTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo_A3_QueueTypeViewController.m; sourceTree = "<group>"; };
 		48708B051E8E4C370032F822 /* Demo_A4_TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo_A4_TargetViewController.h; sourceTree = "<group>"; };
 		48708B061E8E4C370032F822 /* Demo_A4_TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo_A4_TargetViewController.m; sourceTree = "<group>"; };
+		48708B081E8E8D130032F822 /* Demo_A5_SourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo_A5_SourceViewController.h; sourceTree = "<group>"; };
+		48708B091E8E8D130032F822 /* Demo_A5_SourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo_A5_SourceViewController.m; sourceTree = "<group>"; };
 		487A45401E8A4E6800137DFF /* PlayGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		487A45441E8A4E6800137DFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		487A45461E8A4E6800137DFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 				48708B031E8E2EE20032F822 /* Demo_A3_QueueTypeViewController.m */,
 				48708B051E8E4C370032F822 /* Demo_A4_TargetViewController.h */,
 				48708B061E8E4C370032F822 /* Demo_A4_TargetViewController.m */,
+				48708B081E8E8D130032F822 /* Demo_A5_SourceViewController.h */,
+				48708B091E8E8D130032F822 /* Demo_A5_SourceViewController.m */,
 			);
 			name = DemoViewController;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			files = (
 				487A45481E8A4E6800137DFF /* AppDelegate.m in Sources */,
 				487A454B1E8A4E6800137DFF /* MasterViewController.m in Sources */,
+				48708B0A1E8E8D130032F822 /* Demo_A5_SourceViewController.m in Sources */,
 				48708AFE1E8E05860032F822 /* Demo_A2_SyncViewController.m in Sources */,
 				48708B071E8E4C370032F822 /* Demo_A4_TargetViewController.m in Sources */,
 				487A45451E8A4E6800137DFF /* main.m in Sources */,

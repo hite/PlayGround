@@ -20,7 +20,7 @@
 
     dispatch_queue_t defaultGlobalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
   
-    [self logBegin:@"异步 - 并发"];
+    [self logBegin:@"异步 - 并发 - 线程"];
     for (NSInteger i = 0; i< 10; i++) {
         dispatch_async(defaultGlobalQueue, ^{
             NSThread *thread = [NSThread currentThread];
@@ -31,14 +31,14 @@
     }
     [self logEnd:(@"异步 - 并发 - 线程")];
     
-    [self logBegin:(@"同步 - 并发 - 线程")];
-    for (NSInteger i = 0; i< 10; i++) {
-        dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            NSThread *thread = [NSThread currentThread];
-            NSLog(@"线程b %d - %@", i, thread);
-        });
-    }
-    [self logEnd:(@"同步 - 并发 - 线程")];
+//    [self logBegin:(@"同步 - 并发 - 线程")];
+//    for (NSInteger i = 0; i< 10; i++) {
+//        dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//            NSThread *thread = [NSThread currentThread];
+//            NSLog(@"线程b %d - %@", i, thread);
+//        });
+//    }
+//    [self logEnd:(@"同步 - 并发 - 线程")];
 }
 
 - (void)didReceiveMemoryWarning {
