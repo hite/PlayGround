@@ -21,7 +21,21 @@
 		487A45531E8A4E6800137DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487A45521E8A4E6800137DFF /* Assets.xcassets */; };
 		487A45561E8A4E6800137DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487A45541E8A4E6800137DFF /* LaunchScreen.storyboard */; };
 		487A45851E8B57CA00137DFF /* ThreadDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 487A45841E8B57CA00137DFF /* ThreadDemoViewController.m */; };
+		488C18151E9DCDD700A9511A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 488C18131E9DCDD700A9511A /* README.md */; };
+		488C18161E9DCDD700A9511A /* Snapfile in Resources */ = {isa = PBXBuildFile; fileRef = 488C18141E9DCDD700A9511A /* Snapfile */; };
+		488C181E1E9DCECE00A9511A /* PlayGroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C181D1E9DCECE00A9511A /* PlayGroundUITests.swift */; };
+		488C18261E9DCF7400A9511A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C18251E9DCF7400A9511A /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		488C18201E9DCECE00A9511A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 487A45381E8A4E6800137DFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 487A453F1E8A4E6800137DFF;
+			remoteInfo = PlayGround;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		48708AF41E8D32930032F822 /* Demo_A1_AboutLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo_A1_AboutLogViewController.h; sourceTree = "<group>"; };
@@ -50,10 +64,23 @@
 		487A45571E8A4E6800137DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		487A45831E8B57CA00137DFF /* ThreadDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadDemoViewController.h; sourceTree = "<group>"; };
 		487A45841E8B57CA00137DFF /* ThreadDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadDemoViewController.m; sourceTree = "<group>"; };
+		488C18131E9DCDD700A9511A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		488C18141E9DCDD700A9511A /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Snapfile; sourceTree = SOURCE_ROOT; };
+		488C181B1E9DCECE00A9511A /* PlayGroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayGroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		488C181D1E9DCECE00A9511A /* PlayGroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGroundUITests.swift; sourceTree = "<group>"; };
+		488C181F1E9DCECE00A9511A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488C18251E9DCF7400A9511A /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		487A453D1E8A4E6800137DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488C18181E9DCECE00A9511A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -88,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				487A45421E8A4E6800137DFF /* PlayGround */,
+				488C181C1E9DCECE00A9511A /* PlayGroundUITests */,
 				487A45411E8A4E6800137DFF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				487A45401E8A4E6800137DFF /* PlayGround.app */,
+				488C181B1E9DCECE00A9511A /* PlayGroundUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,9 +151,29 @@
 		487A45431E8A4E6800137DFF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				488C18121E9DCDC300A9511A /* resources */,
 				487A45441E8A4E6800137DFF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		488C18121E9DCDC300A9511A /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		488C181C1E9DCECE00A9511A /* PlayGroundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				488C18131E9DCDD700A9511A /* README.md */,
+				488C18141E9DCDD700A9511A /* Snapfile */,
+				488C18251E9DCF7400A9511A /* SnapshotHelper.swift */,
+				488C181D1E9DCECE00A9511A /* PlayGroundUITests.swift */,
+				488C181F1E9DCECE00A9511A /* Info.plist */,
+			);
+			path = PlayGroundUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,18 +196,42 @@
 			productReference = 487A45401E8A4E6800137DFF /* PlayGround.app */;
 			productType = "com.apple.product-type.application";
 		};
+		488C181A1E9DCECE00A9511A /* PlayGroundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 488C18221E9DCECE00A9511A /* Build configuration list for PBXNativeTarget "PlayGroundUITests" */;
+			buildPhases = (
+				488C18171E9DCECE00A9511A /* Sources */,
+				488C18181E9DCECE00A9511A /* Frameworks */,
+				488C18191E9DCECE00A9511A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				488C18211E9DCECE00A9511A /* PBXTargetDependency */,
+			);
+			name = PlayGroundUITests;
+			productName = PlayGroundUITests;
+			productReference = 488C181B1E9DCECE00A9511A /* PlayGroundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		487A45381E8A4E6800137DFF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = liang;
 				TargetAttributes = {
 					487A453F1E8A4E6800137DFF = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+					};
+					488C181A1E9DCECE00A9511A = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 487A453F1E8A4E6800137DFF;
 					};
 				};
 			};
@@ -176,6 +249,7 @@
 			projectRoot = "";
 			targets = (
 				487A453F1E8A4E6800137DFF /* PlayGround */,
+				488C181A1E9DCECE00A9511A /* PlayGroundUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,7 +261,15 @@
 			files = (
 				487A45561E8A4E6800137DFF /* LaunchScreen.storyboard in Resources */,
 				487A45531E8A4E6800137DFF /* Assets.xcassets in Resources */,
+				488C18161E9DCDD700A9511A /* Snapfile in Resources */,
 				487A45511E8A4E6800137DFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		488C18191E9DCECE00A9511A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +286,7 @@
 				48708AFE1E8E05860032F822 /* Demo_A2_SyncViewController.m in Sources */,
 				48708B071E8E4C370032F822 /* Demo_A4_TargetViewController.m in Sources */,
 				487A45451E8A4E6800137DFF /* main.m in Sources */,
+				488C18151E9DCDD700A9511A /* README.md in Sources */,
 				487A454E1E8A4E6800137DFF /* DetailViewController.m in Sources */,
 				48708B011E8E27590032F822 /* UIViewController+LogUtil.m in Sources */,
 				487A45851E8B57CA00137DFF /* ThreadDemoViewController.m in Sources */,
@@ -212,7 +295,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		488C18171E9DCECE00A9511A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				488C181E1E9DCECE00A9511A /* PlayGroundUITests.swift in Sources */,
+				488C18261E9DCF7400A9511A /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		488C18211E9DCECE00A9511A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 487A453F1E8A4E6800137DFF /* PlayGround */;
+			targetProxy = 488C18201E9DCECE00A9511A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		487A454F1E8A4E6800137DFF /* Main.storyboard */ = {
@@ -346,6 +446,37 @@
 			};
 			name = Release;
 		};
+		488C18231E9DCECE00A9511A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PlayGroundUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hite.app.PlayGroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PlayGround;
+			};
+			name = Debug;
+		};
+		488C18241E9DCECE00A9511A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PlayGroundUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hite.app.PlayGroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PlayGround;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -366,6 +497,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		488C18221E9DCECE00A9511A /* Build configuration list for PBXNativeTarget "PlayGroundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488C18231E9DCECE00A9511A /* Debug */,
+				488C18241E9DCECE00A9511A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

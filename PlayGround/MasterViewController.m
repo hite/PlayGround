@@ -123,6 +123,7 @@
 {
     DemoMapper *object = self.objects[indexPath.row];
     UIViewController *cls = (UIViewController *)[object.clzName new];;
+    cls.title = object.demoName;
     [self.navigationController pushViewController:cls animated:YES];
 }
 
